@@ -22,7 +22,7 @@ class Show < ActiveRecord::Base
 
   def Show::popular_shows
     array = []
-    array = Show.
+    array = Show.where("rating > 5")
   end 
   
   
