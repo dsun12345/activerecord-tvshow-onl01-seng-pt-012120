@@ -12,4 +12,11 @@ class Show < ActiveRecord::Base
     Show.minimum("rating")
   end 
   
+  def Show::least_popular_show
+    Show.order(rating: :ASCD).first 
+    
+  end 
+  
+  
+  
 end 
