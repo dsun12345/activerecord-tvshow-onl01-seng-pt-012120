@@ -21,10 +21,12 @@ class Show < ActiveRecord::Base
   end 
 
   def Show::popular_shows
-    array = []
-    array = Show.where("rating > 5")
+    Show.where("rating > 5")
   end 
   
+  def Show::shows_by_alphabetical_order
+    Show.
+  end 
   
   
 end 
